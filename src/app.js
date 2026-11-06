@@ -15,7 +15,7 @@ const app = express();
 app.disable("x-powered-by");
 app.use(helmet());
 
-const allowedOrigins = (process.env.CORS_ORIGINS || "")
+const allowedOrigins = ("https://bautekflink.netlify.app/" || "")
   .split(",")
   .map((origin) => origin.trim())
   .filter(Boolean);
